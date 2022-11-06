@@ -15,6 +15,8 @@ String currentStatusInfo();
 
 void runProcedure();
 
+void move(long distance, String direction);
+
 void forward();
 
 void stop();
@@ -45,6 +47,20 @@ void setup() {
 }
 
 void runProcedure() {
+    //move forward 1m
+    move(1.0, "forward");
+    //turn right 90 degrees
+    move(static_cast<long>(0.1), "right");
+    //move forward 1m
+    move(1.0, "forward");
+    //turn left 90 degrees
+    move(static_cast<long>(0.1), "left");
+    //move forward 1m
+    move(1.0, "forward");
+    //turn left 90 degrees
+    move(static_cast<long>(0.1), "left");
+    //move forward 2m
+    move(2.0, "forward");
 
 }
 
