@@ -49,7 +49,7 @@ void runProcedure() {
 }
 
 //function move, takes in a d in cm and direction
-void move(long d, const String& direction) {
+void move(long d, const String &direction) {
     //calculate the time to move the d
     long time = d * distanceTraveledToMsRatio;
     //move the d
